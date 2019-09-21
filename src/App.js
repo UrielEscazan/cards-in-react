@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Titulo from "./components/titulo";
+import Mensaje from "./components/mensaje"
+import Tarjeta from "./components/cards"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <React.Fragment>
+  <Titulo name="The Devil Wears Prada"/>
+  <Mensaje message="Dayton, Ohio"/>
+  <Mensaje message="Christian Metal core"/>
+  <Tarjeta cards/>
+
+  <Titulo name="Chulo"/>
+  <Mensaje message="Mi nombre es Chulo"/>
+
+  </React.Fragment>
   );
 }
 
